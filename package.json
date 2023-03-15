@@ -1,0 +1,22 @@
+{
+  "name": "orderbird-challenge",
+  "version": "1.0.0",
+  "description": "single page application that consumes Github's api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "orderbird"
+  ],
+  "author": "Fernando Cueto <fernandoecueto@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "babel-loader": "^9.1.2",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.12.0"
+  }
+}
