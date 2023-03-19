@@ -1,13 +1,11 @@
 import Header from "../templates/Header";
-import Home from "../controllers/home.controller";
-import About from "../controllers/about.controller";
-import Error404 from "../controllers/error404.controller";
+import { views } from "../controllers";
 import getHash from "../utils/getHash";
 import resolveRoutes from "../utils/resolveRoutes";
 
 const routes = {
-  "/": Home,
-  "/about": About,
+  "/": views.home,
+  "/about": views.about,
 };
 
 const router = async () => {
@@ -18,7 +16,7 @@ const router = async () => {
   header.innerHTML = await Header();
   let hash = getHash();
   let route = await resolveRoutes(hash);
-  let render = routes[route] ? routes[route] : Error404;
+  let render = routes[route] ? routes[route] : views.notFound;
 
   content.appendChild(render());
 };

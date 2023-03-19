@@ -1,4 +1,4 @@
-import view from "../pages/404.html";
+import view from "../pages/error404.html";
 
 const Error404 = () => {
   const divelement = document.createElement("div");

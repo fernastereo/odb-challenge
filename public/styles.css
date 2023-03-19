@@ -1593,6 +1593,12 @@ select {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:block {
     display: block;
