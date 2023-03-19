@@ -1,9 +1,8 @@
 import token from "../../tokens.json";
 const API = "https://api.github.com";
 
-const getRepositories = async (repoName) => {
-  repoName = "curaduria";
-  const apiUrl = repoName ? `${API}/search/repositories?q=${repoName}` : API;
+const getUser = async (userName) => {
+  const apiUrl = userName ? `${API}/users/${userName}` : API;
 
   const options = {
     method: "GET",
@@ -21,4 +20,4 @@ const getRepositories = async (repoName) => {
   }
 };
 
-export default getRepositories;
+export default getUser;
