@@ -2,7 +2,6 @@ import token from "../../tokens.json";
 const API = "https://api.github.com";
 
 const getRepositories = async (repoName) => {
-  repoName = "curaduria";
   const apiUrl = repoName ? `${API}/search/repositories?q=${repoName}` : API;
 
   const options = {
