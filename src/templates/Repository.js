@@ -1,6 +1,6 @@
 const Repository = (repositories) => {
   const view = `
-    <div>
+    <div class="lg:grid lg:grid-cols-2 xl:grid-cols-3">
         ${repositories
           .map(
             (repository) => `

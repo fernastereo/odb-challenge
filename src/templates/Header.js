@@ -1,19 +1,19 @@
 const Header = () => {
   const view = `
-    <div class="header-main">
-        <div class="header-logo">
-            <h1>
-                <a href="#/">Home</a>
-            </h1>
-        </div>
-        <div class="header-nav">
-            <h1>
-                <a href="#/about/">About</a>
-            </h1>
-        </div>
-    </div>
-    `;
+    <nav class="flex-shrink-0 bg-indigo-600">
+        <div class="mx-auto max-w-7xl px-8">
+            <div class="relative flex h-12 items-center justify-end">
+                <div class="flex items-center justify-end">
+                    <div class="flex">
+                        <a href="#/" class="px-3 py-2 text-sm font-medium text-white hover:text-black">Home</a>
 
+                        <a href="#/about/" class="px-3 py-2 text-sm font-medium text-white hover:text-black">About</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    `;
   return view;
 };
 

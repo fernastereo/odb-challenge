@@ -1592,6 +1592,11 @@ select {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .focus\:bg-white:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1770,6 +1775,10 @@ select {
     display: flex;
   }
 
+  .lg\:grid {
+    display: grid;
+  }
+
   .lg\:hidden {
     display: none;
   }
@@ -1788,6 +1797,10 @@ select {
 
   .lg\:flex-shrink-0 {
     flex-shrink: 0;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:justify-end {
@@ -1854,6 +1867,10 @@ select {
 
   .xl\:flex-shrink-0 {
     flex-shrink: 0;
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:flex-col {
