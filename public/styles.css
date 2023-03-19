@@ -735,8 +735,16 @@ select {
   bottom: 0px;
 }
 
+.isolate {
+  isolation: isolate;
+}
+
 .z-10 {
   z-index: 10;
+}
+
+.-z-10 {
+  z-index: -10;
 }
 
 .mx-auto {
@@ -780,6 +788,14 @@ select {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .block {
@@ -1210,6 +1226,16 @@ select {
   fill: currentColor;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-top {
+  -o-object-position: top;
+     object-position: top;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -1278,6 +1304,16 @@ select {
   padding-right: 2rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1330,6 +1366,10 @@ select {
   padding-top: 1.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .align-middle {
   vertical-align: middle;
 }
@@ -1354,6 +1394,16 @@ select {
   line-height: 1.75rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1368,6 +1418,18 @@ select {
 
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
 }
 
 .text-gray-300 {
@@ -1428,6 +1490,24 @@ select {
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-white\/70 {
+  color: rgb(255 255 255 / 0.7);
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-black\/70 {
+  color: rgb(0 0 0 / 0.7);
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1700,6 +1780,10 @@ select {
     margin-top: 0px;
   }
 
+  .sm\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1742,6 +1826,11 @@ select {
     padding-bottom: 1.5rem;
   }
 
+  .sm\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   .sm\:pl-6 {
     padding-left: 1.5rem;
   }
@@ -1753,6 +1842,11 @@ select {
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .sm\:leading-6 {
