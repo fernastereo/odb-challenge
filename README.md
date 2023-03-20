@@ -46,3 +46,9 @@ It shows a list of repositories with the following information:
    ```
    npm run start
    ```
+
+7. Run the unit Tests.
+
+   ```
+   npm run test
+   ```
