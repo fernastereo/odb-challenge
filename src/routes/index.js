@@ -2,7 +2,6 @@ import Header from "../templates/Header";
 import Footer from "../templates/Footer";
 import { views } from "../controllers";
 import getHash from "../utils/getHash";
-import resolveRoutes from "../utils/resolveRoutes";
 
 const routes = {
   "/": views.home,
@@ -17,8 +16,8 @@ const router = async () => {
 
   header.innerHTML = await Header();
   footer.innerHTML = await Footer();
-  let hash = getHash();
-  let route = await resolveRoutes(hash);
+  let route = getHash(location.hash);
+
   let render = routes[route] ? routes[route] : views.notFound;
 
   content.appendChild(render());

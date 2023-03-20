@@ -1,3 +1,6 @@
-const getHash = () => location.hash.slice(1).toLocaleLowerCase().split('/')[1] || '/';
+const getHash = (url) => {
+  const resolvedUri = url.slice(1).toLocaleLowerCase().split("/")[1] || "";
+  return `/${resolvedUri}`;
+};
 
 export default getHash;
