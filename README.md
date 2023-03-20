@@ -9,7 +9,7 @@ It shows a list of repositories with the following information:
 - Author’s profile picture
 - Repository's stars
 - Repository's forks
-- Whether a repository is popular or not
+- Whether a repository is popular or not (🙂)
 
 ## How to install
 
